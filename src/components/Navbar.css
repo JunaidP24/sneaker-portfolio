@@ -29,10 +29,11 @@
     align-items: center;
   }
   
-  i.fa.fa-list-alt{
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
+  i.fa.fa-list-alt
+  { 
+    margin-left: 0.5rem; 
+    font-size: 1.8rem; 
+}
   
   .nav-menu {
     display: grid;
@@ -83,6 +84,7 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       width: 100%;
       height: 90vh;
       position: absolute;
@@ -104,7 +106,9 @@
       text-align: center;
       padding: 2rem;
       width: 100%;
-      display: table;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   
     .nav-links:hover {
