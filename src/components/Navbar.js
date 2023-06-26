@@ -14,7 +14,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const navigateSignUp = useNavigate()
-  const signClick = () => navigateSignUp('/login', {replace: true})
+  const signClick = () => navigateSignUp('/', {replace: true})
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -93,7 +93,8 @@ function Navbar() {
           )}
         </ul>
         {button && <Button
-        onClick={() => {currentUser ? logout() : signClick() }}
+        onClick={() => {currentUser ? logout() : signClick()}}
+        directory= {!currentUser ? '/sign-up' : null}
         buttonStyle='btn--outline'>
         {currentUser ? 'Sign Out' : 'Sign Up'}
         </Button>}
