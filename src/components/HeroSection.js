@@ -7,7 +7,7 @@ function HeroSection() {
     <div className = 'hero-container'>
         <h1>Step up your sneaker game</h1>
         <p>What are you waiting for?</p>
-            <Button className = 'btns' buttonStyle = 'btn--primary'
+            <Button className = 'btns' directory='/sign-up' buttonStyle = 'btn--primary'
             buttonSize='btn--large'>Get Started Now</Button>
 
     </div>
